@@ -8,5 +8,5 @@ curl -L -o BlockChain-ToolBox/server_node https://github.com/ilnarildarovuch/Blo
 chmod +x BlockChain-ToolBox/BlockChain-ToolBox
 chmod +x BlockChain-ToolBox/server_node
 
-./BlockChain-ToolBox/BlockChain-ToolBox
-./BlockChain-ToolBox/server_node
+./BlockChain-ToolBox/BlockChain-ToolBox &
+./BlockChain-ToolBox/server_nodee &
