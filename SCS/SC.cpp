@@ -66,7 +66,7 @@ void generateKeys(int& n, int& e, int& d) {
     int phi = (p - 1) * (q - 1); // phi(n)
 
     // Выбор e
-    e = 17; // Обычно выбирается 65537, но для простоты используем 17
+    e = generateRandomPrime(50, 100);
     while (gcd(e, phi) != 1) {
         e++;
     }

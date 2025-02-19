@@ -35,20 +35,5 @@ public:
     }
 };
 
-int getBalance(const std::string& publicKey, const std::vector<Transaction>& transactions) {
-    int balance = 0;
-
-    for (const auto& tx : transactions) {
-        if (tx.publicKey == publicKey) {
-            balance -= tx.howMany; // вычесть сумму, если это расход
-        }
-        if (tx.receiver_publicKey == publicKey) {
-            balance += tx.howMany; // добавить сумму, если это доход
-        }
-    }
-
-    return balance;
-}
-
 #endif // TRANSACTION_HPP
 

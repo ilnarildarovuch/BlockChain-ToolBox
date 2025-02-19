@@ -19,7 +19,7 @@ public:
     std::vector<Transaction> transactions; // Список транзакций
     std::string hash;                   // Хэш текущего блока
     int nonce;                          // Нонс для доказательства работы
-    static const int difficulty = 6;    // Уровень сложности (количество ведущих нулей)
+    static const int difficulty = 4;    // Уровень сложности (количество ведущих нулей)
     int ProofOfWorkCoinAddress;         // Адрес. Добавляет транзакцию, отправляющую майнеру 3 монеты
 
 
